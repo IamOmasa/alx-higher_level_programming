@@ -7,4 +7,4 @@ if number > 0:
 elif number == 0:
     f"(number) is zero"
 else:
-f"(number) is negative"
+    f"(number) is negative"
