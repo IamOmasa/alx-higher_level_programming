@@ -6,5 +6,5 @@ if number > 0:
     f"(number) is positive"
 elif number == 0:
     f"(number) is zero"
-else
+else:
 f"(number) is negative"
