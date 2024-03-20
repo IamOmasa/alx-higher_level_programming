@@ -8,6 +8,6 @@ def delete_at(my_list=[], idx=0):
 
     new_list = my_list[:idx]
 
-    new_list.extend(my_list[idx + 1:])
+    new_list.extend(my_list[(idx + 1):])
 
     return new_list
