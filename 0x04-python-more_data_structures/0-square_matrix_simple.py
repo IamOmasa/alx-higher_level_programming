@@ -6,7 +6,9 @@ def square_matrix_simple(matrix=[]):
     new_matrix = []
 
     for i in matrix:
+        sq_row = []
         for j in i:
-            new_matrix.append(j**2)
+            sq_row.append(j**2)
+        new_matrix.append(sq_row)
 
     return new_matrix
