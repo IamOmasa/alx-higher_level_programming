@@ -4,14 +4,11 @@
 
 
 def uniq_add(my_list=[]):
-    uniq_elem = []
+    uniq_elem = set()
 
-    sum = 0
     for i in my_list:
-        if i != i+1:
-            uniq_elem.append(i)
+        uniq_elem.add(i)
 
-    for j in uniq_elem:
-        sum += j
+    total = sum(uniq_elem)
 
-    return sum
+    return total
