@@ -3,10 +3,7 @@
 
 
 def multiply_by_2(a_dictionary):
-    new_dict = {}
+    a_dictionary.update((key, value * 2) for key, value in a_dictionary.items())
 
     for key, value in a_dictionary.items():
-        new_dict[key] = value * 2
-
-    for key, value in new_dict.items():
         print(f"{key}: {value}")
