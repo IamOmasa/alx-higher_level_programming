@@ -4,3 +4,6 @@
 
 def update_dictionary(a_dictionary, key, value):
     a_dictionary[key] = value
+    
+    for key, value in a_dictionary:
+        print(f"{key}: {value}")
