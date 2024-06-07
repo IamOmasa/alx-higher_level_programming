@@ -3,5 +3,4 @@
 
 
 def multiply_list_map(my_list=[], number=0):
-    from operator import mul
     return list(map(lambda x: x * number, my_list[:]))

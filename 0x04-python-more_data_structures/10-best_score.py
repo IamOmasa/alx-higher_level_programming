@@ -3,11 +3,16 @@
 
 
 def best_score(a_dictionary):
+    if not a_dictionary:
+        return None
+
     a = list(a_dictionary.keys())
     b = sorted(list(a_dictionary.values()))
-    b_name = b.index(b[len(b) - 1])
 
-    if len(b) == 0:
-        return ("None")
+    b_index = b[len(a) - 1]
+    b_name = None
+    for key, value in a_dictionary.items():
+        if value == b_index:
+            b_name = key
 
-    return a[b_name]
+    return b_name
