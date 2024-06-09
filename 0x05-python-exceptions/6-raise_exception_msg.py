@@ -3,4 +3,7 @@
 
 
 def raise_exception_msg(message=""):
-    raise NameError(message)
+    try:
+        raise NameError(message)
+    except NameError as message:
+        print(message)
