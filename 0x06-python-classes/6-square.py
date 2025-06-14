@@ -57,7 +57,10 @@ class Square:
 
             Return: value of positive tuple
         """
-        if len(value) != 2:
+        if not (isinstance(value, tuple) and
+                len(value) == 2 and
+                isinstance(value[0], int) and isinstance(value[1], int) and
+                value[0] >= 0 and value[1] >= 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -70,7 +73,7 @@ class Square:
             Return: square the value of the side of the sqaure (size)
         """
 
-        return int(self.__size) * int(self.__size)
+        return (self.__size) * (self.__size)
 
     def my_print(self):
         """method that print in stdout the square with character #
@@ -83,5 +86,10 @@ class Square:
         if self.__size == 0:
             print()
 
-        for i in range(abs(self.__size)):
+        for _ in range(self.__position[1]):
+            print()
+
+        for _ in range(self.__size)):
+
+            print(" " * self.__position[0], end="")
             print("#" * (self.__size))
